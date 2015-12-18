@@ -1,8 +1,3 @@
-// Widget Translate
-function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'id', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-};
-function downloadJSAtOnload(){var e=document.createElement("script");e.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit",document.body.appendChild(e)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload;
-
 // Random Post
 var homePage = "http://iwanberbagi.com/",
 numPosts = 5;
