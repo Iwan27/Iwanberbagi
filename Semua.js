@@ -25,23 +25,3 @@ $(function() {
         });
     });
 });
-
-// JS Related Pots
-var mql = window.matchMedia(&#39;screen and (min-width: 992px)&#39;);if (mql.matches){
-  var labelArray = [<b:if cond='data:post.labels'><b:loop values='data:post.labels' var='label'>
-          &quot;<data:label.name/>&quot;<b:if cond='data:label.isLast != &quot;true&quot;'>,</b:if>
-      </b:loop></b:if>];
-  var relatedPostConfig = {
-      homePage: &quot;<data:blog.homepageUrl/>&quot;,
-      widgetTitle: &quot;<h4>Artikel Terkait</h4>&quot;,
-      numPosts:5,
-      summaryLength:120,
-      titleLength: &quot;auto&quot;,
-      thumbnailSize: 120,
-      noImage: &quot;http://1.bp.blogspot.com/-_J9IogaehxA/VYkRlA-xvqI/AAAAAAAAEmw/CF8ROTyXOe0/s1600/no_images.png&quot;,
-      containerId: &quot;related-post&quot;,
-      newTabLink: false,
-      moreText: &quot;&quot;,
-      widgetStyle: 2,
-      callBack: function() {}
-  };}
